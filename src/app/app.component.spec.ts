@@ -26,10 +26,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('BoringApp');
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render the app logo in the header', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to BoringApp!');
+    expect(compiled.querySelector('header .logo').textContent).toContain('CoolApp');
   });
 });
